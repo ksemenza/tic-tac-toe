@@ -1,6 +1,6 @@
 export const game_style = {
     width: '200px',
-    margin: '20px auto',
+    // margin: '20px auto',
 };
 
 
@@ -9,7 +9,7 @@ export const board_style = {
     borderRadius: '10px',
     width: '250px',
     height: '250px',
-    margin: '0 auto',
+    // margin: '0 auto',
     display: 'grid',
     gridTemplate: 'repeat(3, 1fr) / repeat(3, 1fr)'
 };

@@ -14,20 +14,27 @@ const Game = () => {
         const boardSquare = [...board];
 
         //Event alternating turns or ends response when won
-        if (winner || boardSquare[i]) return;
+        if (winner || boardSquare[i])
+            return
         boardSquare[i] = nextMove ? "X" : "O";
         setBoard(boardSquare)
         setNextMove(!nextMove)
-        
     }
+
+    console.log(board)
 
     const renderMoves = () => (
         <button onClick={() => setBoard(Array(9).fill(null))}>Reset Game</button>
     )
 
+    /**
+     switch  
+     
+     */
+
 
     return (
-        <div>
+        <div className='game-cta'>
             <h2>Tic Tac Toe</h2>
             <Board squares={board} onClick={handleClick} />
 
